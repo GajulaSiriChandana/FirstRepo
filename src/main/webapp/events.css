@@ -1,0 +1,186 @@
+.whole{
+    height: 95vh;
+    width: 95vw;
+}
+
+.titleCover{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(162, 26, 60);
+}
+
+.banner{
+    width: 100%;
+    height: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner img{
+    height: 20vh;
+}
+
+.banner .titleSpace {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner .titleSpace .title{
+    color: white;
+    font-size: 6ch;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbarPosition{
+    width: 100%;
+}
+
+.navbar{
+    width: fit-content;
+    margin-left: 29%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbarElement{
+    color: white;
+    border-right: 1px solid rgb(255, 0, 149);
+    padding: 10px 30px;
+    height: fit-content;
+}
+
+.navbarElement:hover{
+    background-color: rgb(208, 0, 93);
+}
+
+#chat{
+    border-right: None;
+}
+
+.contentSpace{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content{
+    width: 95%;
+}
+
+.coverEventsSpace {
+    height: 50vh;
+    width: 100%;
+    margin: 25px 0px 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.coverEvents{
+    width: 100%;
+    max-width: 1100px;
+}
+
+.coverEvents .titleSpace {
+    font-size: 5ch;
+}
+
+.coverEvents img{
+    width: 100%;
+}
+
+.eventOuterSpace{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.eventSpace{
+    width: 95%;
+    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eventsByYearSpace , .eventsByCategorySpace{
+    width: 49%;
+}
+
+.eventsByYearSpace .titleSpace , .eventsByCategorySpace .titleSpace{
+    font-size: 5ch;
+}
+
+.eventsByYearSpace .yearSelect , .eventsByCategorySpace .categorySelect{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.eventsByYearSpace .yearSelect .year{
+    width: 8%;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(213, 5, 98);
+    color: white;
+}
+
+.eventsByYearSpace .yearSelect .selected{
+    background-color: rgb(255, 62, 149);
+}
+
+.eventsByYearSpace .yearSelect .year:hover{
+    background-color: rgb(255, 45, 140);
+    color: white;
+}
+
+.eventsByCategorySpace .categorySelect .category{
+    width: 29%;
+    font-size: 14px;
+    padding: 6px 10px 6px 10px;
+    background-color: rgb(213, 5, 98);
+    color: white;
+}
+
+.eventsByCategorySpace .categorySelect .selected{
+    background-color: rgb(255, 62, 149);
+}
+
+
+.eventsByCategorySpace .categorySelect .category:hover {
+    background-color: rgb(255, 45, 140);
+    color: white;    
+}
+
+.eventsByYearSpace .eventsList , .eventsByCategorySpace .eventsList {
+    width: 100%;
+    min-height: 500px;
+    border: 1px solid rgb(255, 48, 151);
+}
+
+.eventsByYearSpace .eventsList .event , .eventsByCategorySpace .eventsList .event {
+    border-bottom: 1px solid rgb(255, 145, 218);
+    width: 93%;
+    padding: 5% 2% 5% 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.eventsByYearSpace .eventsList .event img , .eventsByCategorySpace .eventsList .event img{
+    width: 30%;
+    margin-right: 20px;
+}
+
+
+

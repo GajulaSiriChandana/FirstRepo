@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentDetailsEdit.css">
+    <title>Document</title>
+
+    <script>
+
+        var studentDetails = [
+            {
+                sNo : 1,
+                admissionYear: "2018-19",
+                studentID: "1180169049",
+                studentName:  "Bhupendra Singh Chandrawat",
+                fatherName: "Rajendra Singh Chandrawat",
+                DOB: "29/11/2000",
+                category: "GEN"
+            },
+            {
+                sNo: 2,
+                admissionYear: "2018-19",
+                studentID: "1180348508",
+                studentName: "Komal Parmar",
+                fatherName: "Nagjiramji Parmar",
+                fatherName: "26/07/1996",
+                category: "SC"
+            },
+            {
+                sNo: 3,
+                admissionYear: "2018-19",
+                studentID: "1180403159",
+                studentName: "Lakhan",
+                fatherName: "Mukesh",
+                DOB: "21/04/2000",
+                category: "GEN"
+            },
+            {
+                sNo: 4,
+                admissionYear: "2018-19",
+                studentID: "1180217918",
+                studentName: "Lokesh Prajapat",
+                fatherName: "Radheshayam Prajapat",
+                DOB: "05/09/2000",
+                category: "OBC(Non-Creamy)"
+            },
+            {
+                sNo: 5,
+                admissionYear: "2018-19",
+                studentID: "1180226205",
+                studentName: "Padam Singh",
+                fatherName: "Vinod Singh",
+                DOB: "23/04/2001",
+                category: "OBC(Non-Creamy)"
+            }
+        ]
+
+
+        function Display(){
+            var i;
+            var tableSpace = document.getElementById("tableSpace");
+            var tableContent="";
+            tableContent+= "<table><tbody>"
+            tableContent+= "<tr>"
+            tableContent+= "<th>S.No.</th>"
+            tableContent+= "<th>Admission Year</th>"
+            tableContent+= "<th>Student ID</th>"
+            tableContent+= "<th>Student Name</th>"
+            tableContent+= "<th>Father Name</th>"
+            tableContent+= "<th>DOB</th>"
+            tableContent+= "<th>Catgory</th>"
+            tableContent+= "</tr>"
+            
+                    for(i=0; i<studentDetails.length; i++){
+                        tableContent+="<tr>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].sNo+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].admissionYear+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].studentID+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].studentName+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].fatherName+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].DOB+"></input></td>"
+                        tableContent+="<td><input type='text' value="+studentDetails[i].category+"></input></td>"
+                        tableContent+="</tr>"
+                    }
+                
+            tableContent+="</tbody></table>"
+            //console.log(tableContent)
+            tableSpace.innerHTML = tableContent;
+            console.log(tableSpace.innerHTML)
+        }
+    </script>
+
+
+
+</head>
+<body>
+    <div class="whole">
+        <div class = "titleCover">
+            <div class="banner">
+                <img src="images/amritaLogo.JPG">
+                <div class="titleSpace">
+                    <div class="title">
+                        Higher Studies Portal
+                    </div>
+                </div>
+            </div>
+            <form class="navbarPosition">
+                <div class="navbar">
+                    <button class="navbarElement" id="ABOUT US" formaction="AboutRedirect" formmethod="get">
+                        ABOUT US
+                    </button>
+                    <button class="navbarElement" id="COURSES" formaction="CoursesOfferedRedirect" formmethod="get">
+                        COURSES
+                    </button>
+                    <button class="navbarElement" id="STUDENTS" formaction="StudentDetailsRedirect" formmethod="get">
+                        STUDENTS
+                    </button>
+                    <button class="navbarElement" id="FACULTY" formaction="FacultyRedirectRedirect" formmethod="get">
+                        FACULTY
+                    </button>
+                    <button class="navbarElement" id="chat" formaction="FAQRedirect" formmethod="get">
+                        FAQ
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="studentDetails">
+            <div class="seRegister">
+                <div>Students Enrollment Register</div>
+            </div>
+            <div class="courseFilter">
+                <div class="courseFilterEdit">
+                <div class="courseBranchSpace">
+                    <div class="course">    
+                        <div class="labelSpace">
+                            <div class="label">
+                                Course : 
+                            </div>
+                        </div>
+                        <div class="dropdownSpace">
+                            <div class="dropdown">
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option value="0" selected>--Select Course--</option>
+                                        <option value="1">M-Sc</option>
+                                        <option value="2">MBA</option>
+                                        <option value="3">M-Tech</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subBranch">    
+                        <div class="labelSpace">
+                            <div class="label">
+                                Sub Branch : 
+                            </div>
+                        </div>
+                        <div class="dropdownSpace">
+                            <div class="dropdown">
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option value="0" selected>--Select Sub Branch--</option>
+                                        <option value="1">CSE</option>
+                                        <option value="2">MEC</option>
+                                        <option value="3">ECE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courseYearSpace">
+                    <div class="courseYear">
+                        <div class="labelSpace">
+                            <div class="label">
+                                Course Year : 
+                            </div>
+                        </div>
+                        <div class="dropdownSpace">
+                            <div class="dropdown">
+                                <div class="custom-select" style="width:200px;">
+                                    <select>
+                                        <option value="0" selected>--Select Year--</option>
+                                        <option value="1">1st Year</option>
+                                        <option value="2">2nd Year</option>
+                                        <option value="3">3rd Year</option>
+                                        <option value="4">4th Year</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="searchSpace">
+                    <button onClick="Display()" >Search</button>
+                </div>
+            </div>
+
+            <div class="tableSpace" id="tableSpace">
+                <table>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Admission Year</th>
+                        <th>Student ID</th>
+                        <th>Student Name</th>
+                        <th>Father Name</th>
+                        <th>DOB</th>
+                        <th>Category</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

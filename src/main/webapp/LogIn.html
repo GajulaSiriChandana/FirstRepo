@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>  login </title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="loginbox">
+            <img src="images/login.jpg" class="avatar" >
+            <h1>Login</h1>
+            <form name="login" action="Login" method="post">
+                <div>
+                <p>Username</p>
+                <input id="name" type="text" name="loginid" placeholder="Enter UserID">
+                </div>
+                <br>
+                <div>
+                <p>Password</p>
+                <input id="password" type="password" name="password" placeholder="Enter Password"><br>
+               </div>
+                <a herf = stu.html><input type="submit" name="" value="Login" class="logon" onclick="window.location.href='portal.html' "><br>
+                <button type="submit" class="forg" formaction="ForgotPasswordRedirect" formmethod="get">Forgot password?</button>
+                <button type="submit" class="signin" formaction="SignUpRedirect" formmethod="get">Sign up</button>
+            </form>
+        </div>
+    </body>
+</head>
+<script>
+    function validateForm() {
+      var x = document.forms["myForm"]["username"].value;
+      if (x == "") {
+        alert("Name must be filled out");
+        return false;
+      }
+      var y = document.forms["myForm"]["password"].value;
+      if (y== "") {
+        alert("Name must be filled out");
+        return false;}
+    }
+    </script>
+</html>

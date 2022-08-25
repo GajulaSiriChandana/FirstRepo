@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<style>
+    body{background-color: white;
+        
+    }
+    h1{
+        color: cornsilk;
+    }
+    h2{
+        color: cornsilk;
+    }
+    .logo img{
+        position: absolute;
+        width: 340px;
+        height: 85px;
+        left: 1097px;
+        top: 5px;
+    }
+   .home {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 88px;
+        top: 20px;
+        color:white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .top .about{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 275px;
+        top: 20px;
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;}
+    .top .courses{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 465px;
+        top: 20px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .top .login{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 705px;
+        top: 20px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        
+    }
+    .top .log{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 905px;
+        top: 20px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 38px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .amrita img{
+        position: absolute;
+        width: 1518px;
+        height: 655px;
+        left: 0px;
+        top: 58px;
+    }
+   
+    
+#rectangle {
+  width: 1518px;
+  height: 100px;
+  background: #b8114f;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+
+}
+.text{
+    position: absolute;
+        width: 750px;
+        height: 50px;
+        left: 180px;
+        top: 120px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight:600;
+}
+
+#boxx {
+  width: 858px;
+  height: 250px;
+  background-color:whitesmoke;
+  top: 120px;
+  left: 10px;
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid #fff
+
+}
+#boxxg {
+  width: 858px;
+  height: 40px;
+  top: 120px;
+  left: 10px;
+  position: absolute;
+  box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+  
+
+}
+#boxxy {
+  width: 558px;
+  height: 190px;
+  background-color:whitesmoke;
+  top: 500px;
+  left: 945px;
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid #fff
+
+}
+#boxxgy {
+  width: 558px;
+  height: 40px;
+  top: 500px;
+  left: 945px;
+  position: absolute;
+  box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+  
+
+}
+
+.log img{
+        position: absolute;
+        width: 1516px;
+        height: 590px;
+        left: 0px;
+        top: 110px;
+    }
+
+    .mon{
+        position: absolute;
+        width: 850px;
+        height: 40px;
+        left: 25px;
+        top: 160px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight:470;
+    }
+    .nm{
+        position: absolute;
+        width: 550px;
+        height: 40px;
+        left: 955px;
+        top: 543px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        font-weight:470;
+    }
+    .matt{
+        position: absolute;
+        width: 750px;
+        height: 50px;
+        left: 325px;
+        top: 120px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #b8114f;
+    }
+    .nom{
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        left: 1155px;
+        top: 500px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #b8114f;
+    }
+    .lo img{
+        position: absolute;
+        width: 1098px;
+        height: 325px;
+        left: 230px;
+        top: 1900px;
+    }
+    #shad{
+        position: absolute;
+        width: 1098px;
+        height: 325px;
+        left: 230px;
+        top: 1900px;
+        box-shadow: -5px 1px 18px rgba(17, 19, 35, 0.08);
+
+    }
+    .app{
+        position: absolute;
+        width: 200px;
+        height: 40px;
+        left: 675px;
+        top: 1170px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        font-weight:570;
+        color: white;
+    }
+    #asd{
+        position: absolute;
+width: 175.88px;
+height: 45px;
+left: 651.06px;
+top: 2167.55px;
+
+background: #F53838;
+border-radius: 50px;
+    }
+
+    .rank img{
+        position: absolute;
+        width: 1316px;
+        height: 390px;
+        left: 100px;
+        top: 800px;
+    }
+    .exc{
+        position: absolute;
+        width: 400px;
+        height: 50px;
+        left: 525px;
+        top: 725px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #b8114f;
+    }
+    .ex img{
+        position: absolute;
+        width: 616px;
+        height: 580px;
+        left: 150px;
+        top: 1200px;
+    }
+    .one img{
+        position: absolute;
+        width: 416px;
+        height: 150px;
+        left: 850px;
+        top: 1220px;
+    }
+    .two img{
+        position: absolute;
+        width: 416px;
+        height: 150px;
+        left: 850px;
+        top: 1390px;
+    }
+    .tho img{
+        position: absolute;
+        width: 416px;
+        height: 150px;
+        left: 850px;
+        top: 1620px;
+    }
+    #sq{
+        width: 1371px;
+  height: 1100px;
+  background:whitesmoke;
+  top: 721px;
+  left: 75px;
+  position: absolute;
+    }
+    #boy {
+  width: 458px;
+  height: 190px;
+  background-color:whitesmoke;
+  top: 2500px;
+  left: 445px;
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid #fff
+
+}
+#bogy {
+  width: 458px;
+  height: 40px;
+  top: 2500px;
+  left: 445px;
+  position: absolute;
+  box-shadow: 0px 13px 18px rgba(17, 19, 35, 0.08);
+  
+
+}
+.om{
+    position: absolute;
+        width: 400px;
+        height: 50px;
+        left: 560px;
+        top: 2500px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: #b8114f;
+}
+.eve img{
+        position: absolute;
+        width: 1116px;
+        height: 550px;
+        left: 200px;
+        top: 1900px;
+    }
+    #ev{
+        position: absolute;
+width: 320px;
+height: 65px;
+left: 585px;
+top: 2370px;
+
+background: #F53838;
+border-radius: 50px;
+    }
+    .event {
+        position: absolute;
+        width: 250px;
+        height: 50px;
+        left: 620px;
+        top: 2380px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: 800;
+        color:white;
+        background-color: transparent;
+        border: none;
+        outline: none;
+}
+    .mob img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 460px;
+        top: 2550px;
+    }
+    .num{
+        position: absolute;
+        width: 150px;
+        height: 25px;
+        left: 500px;
+        top: 2550px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        color:black;
+    }
+    .mo img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 700px;
+        top: 2550px;
+    }
+    .nu{
+        position: absolute;
+        width: 150px;
+        height: 25px;
+        left: 735px;
+        top: 2550px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        color:black;
+    }
+    .ma img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 550px;
+        top: 2610px;
+    }
+    .mu{
+        position: absolute;
+        width: 150px;
+        height: 25px;
+        left: 585px;
+        top: 2610px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        color:black;
+    }
+    .fb img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 550px;
+        top: 2660px;
+    }
+    .in img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 650px;
+        top: 2660px;
+    }
+    .ut img{
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        left: 750px;
+        top: 2665px;
+    }
+    #b{
+  width: 1518px;
+  height: 220px;
+  background-color:black;
+  top: 2490px;
+  left: 0px;
+  position: absolute;
+
+    }
+
+  
+
+</style>
+<body>
+    <div id="rectangle"></div>
+   
+    <div class="logo">
+        <img src="images/wt.png">
+    </div>
+    <div id="back"></div>
+    <div class="top">
+        <button type="button" class="home"onclick="window.location.href='oned.html' ">HOME</button>
+        <button type="button" class="about"onclick="window.location.href='homed.html' ">ABOUT</button>
+        <button type="button" class="courses"onclick="window.location.href='coursesOfferedEdit.html' ">COURSES</button>
+        <button type="button" class="login"onclick="window.location.href='UserLogin.html' ">LOGOUT</button>
+        <button type="button" class="log"onclick="window.location.href='faq.html' ">FAQ</button>
+        
+    </div>
+    
+    <div class="log">
+        <img src="images/pet.jpg">
+    </div>
+
+
+    <div id="boxx"></div>
+    <div id="boxxg"></div>
+    <DIV CLASS="matt">ABOUT</DIV>
+    <div class="mon">Amrita Vishwa Vidyapeetham is a multi-campus, multi-disciplinary research academia that is accredited 'A++' by NAAC and is ranked as one of the best research institutions in India. Amrita is spread across six campuses in three states of India - Kerala, Tamil Nadu and Karnataka, with the headquarters at Ettimadai, Coimbatore, Tamil Nadu. Amrita Vishwa Vidyapeetham continuously collaborates with top US universities including Ivy league universities and top European universities for regular student exchange programs, and has emerged as one of the fastest growing institutions of higher learning in India. The institution is managed by the Mata Amritanandamayi Math. </div>
+
+    <div id="boxxy"></div>
+    <div id="boxxgy"></div>
+    <div class="nom">VISION</div>
+    <div class="nm">Our vision is to be an exemplary institution that thrives on its commitment to the transformative power of value based education, providing the impetus to develop the expansiveness to harmonize both scientific knowledge and spiritual understanding, so as to utilize knowledge for societal benefit and contribute to a prosperous and sustainable future for all.</div>
+    <div id="sq"></div>
+    <div class="rank">
+        <img src="images/ranks.jpg">
+    </div>
+
+    <div class="exc">EXCELLENCE IN RANKINGS</div>
+    <div class="ex"><img src="images/grap.jpg"></div>
+    <div class="one"><img src="images/the.png"></div>
+    <div class="two"><img src="images/nirf.png"></div>
+    <div class="tho"><img src="images/brics.jpg"></div>
+    <div class="eve"><img src="images/vidd.jpg"></div>
+    <div id="b"></div>
+    <div id="boy"></div>
+    <div id="bogy"></div>
+    <div class="om">CONTACT US</div>
+    <div class="mob"><img src="images/cal.png"></div>
+    <div id="ev"></div>
+    <button type="button" class="event"onclick="window.location.href='events.html' ">Amrita Events</button>
+
+    <div class="num">+91 6303560812</div>
+    <div class="nu">+91 9849861102</div>
+    <div class="mo"><img src="images/cal.png"></div>
+    <div class="ma"><img src="images/mail.png"></div>
+    <div class="mu">Mtech@amrita.edu</div>
+    <div class="in"><img src="images/insta.png"></div>
+    <div class="ut"><img src="images/ut.png"></div>
+    <div class="fb"><img src="images/fb.png"></div>
+
+
+    
+   
+</body>

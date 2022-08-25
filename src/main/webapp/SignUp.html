@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>  signup </title>
+    <link rel="stylesheet" href="signup.css">
+    <body>
+        <div class="loginbox">
+            <img src="images/sign.jpg" class="avatar" >
+            <h1>Signup</h1>
+            <form action="SignUp" method="post">
+                <label for="fname"><b>Full name</b></label>
+                <input type="text" placeholder="Enter Full name" name="name" required>
+                <br>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <br>
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <br>
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <br>
+                <div class="clearfix">
+                  <button type="submit" class="cancelbtn" formaction="LogInRedirect" formmethod="get">Cancel</button>
+                  <button type="submit" class="signupbtn" value="SignUp">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

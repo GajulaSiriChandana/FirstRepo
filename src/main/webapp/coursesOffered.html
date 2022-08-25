@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coursesOfferedEdit.css">
+    <title>Document</title>
+    <script>
+
+        var table1819 = [
+            {
+                sNo : 1,
+                courseName : 'M. Tech: CSE',
+                noOfSeats : 120,
+                admittedStudents : 149,
+                vacantSeats : 0,
+                feeStructure : 1796
+            },
+            {
+                sNo : 2,
+                courseName : 'M. Tech: MEC',
+                noOfSeats : 30,
+                admittedStudents : 22,
+                vacantSeats : 8,
+                feeStructure : 1796
+            },
+            {
+                sNo : 3,
+                courseName : 'M. Tech: ECE',
+                noOfSeats : 30,
+                admittedStudents : 16,
+                vacantSeats : 14,
+                feeStructure : 1796
+            }
+        ]
+
+        var table1718 = [
+
+        ]
+
+        var table1617 = [
+
+        ]
+
+        var table1516 = [
+
+        ]
+
+        function Update(){
+            var i;
+            var yearSelect = document.getElementById("yearSelect");
+            var tableSpace = document.getElementById("tableSpace");
+            var tableContent="";
+            console.log(yearSelect.value)
+            tableContent+= "<table><tbody>"
+            tableContent+= "<tr>"
+            tableContent+= "<th>S.No.</th>"
+            tableContent+= "<th>Course Name</th>"
+            tableContent+= "<th>No. of Seats</th>"
+            tableContent+= "<th>Admitted Students</th>"
+            tableContent+= "<th>Vacant Seats</th>"
+            tableContent+= "<th>Fee Structure</th>"
+            tableContent+= "</tr>"
+            switch(yearSelect.value) {
+                case "2018-2019":  
+                    for(i=0; i<table1819.length; i++){
+                        tableContent+="<tr>"
+                        tableContent+="<td>"+table1819[i].sNo+"</td>"
+                        tableContent+="<td>"+table1819[i].courseName+"</td>"
+                        tableContent+="<td>"+table1819[i].noOfSeats+"</td>"
+                        tableContent+="<td>"+table1819[i].admittedStudents+"</td>"
+                        tableContent+="<td>"+table1819[i].vacantSeats+"</td>"
+                        tableContent+="<td>"+table1819[i].feeStructure+"</td>"
+                        tableContent+="</tr>"
+                    }
+                    break;
+                case "2017-2018":
+                    for(i=0; i<table1718.length; i++){
+                        tableContent+="<tr>"
+                        tableContent+="<td>"+table1718[i].sNo+"</td>"
+                        tableContent+="<td>"+table1718[i].courseName+"</td>"
+                        tableContent+="<td>"+table1718[i].noOfSeats+"</td>"
+                        tableContent+="<td>"+table1718[i].admittedStudents+"</td>"
+                        tableContent+="<td>"+table1718[i].vacantSeats+"</td>"
+                        tableContent+="<td>"+table1718[i].feeStructure+"</td>"
+                        tableContent+="</tr>"
+                    }
+                    break;
+                case "2016-2017":
+                    for(i=0; i<table1617.length; i++){
+                        tableContent+="<tr>"
+                        tableContent+="<td>"+table1617[i].sNo+"</td>"
+                        tableContent+="<td>"+table1617[i].courseName+"</td>"
+                        tableContent+="<td>"+table1617[i].noOfSeats+"</td>"
+                        tableContent+="<td>"+table1617[i].admittedStudents+"</td>"
+                        tableContent+="<td>"+table1617[i].vacantSeats+"</td>"
+                        tableContent+="<td>"+table1617[i].feeStructure+"</td>"
+                        tableContent+="</tr>"
+                    }
+                    break;
+                case "2015-2016":
+                    for(i=0; i<table1516.length; i++){
+                        tableContent+="<tr>"
+                        tableContent+="<td>"+table1516[i].sNo+"</td>"
+                        tableContent+="<td>"+table1516[i].courseName+"</td>"
+                        tableContent+="<td>"+table1516[i].noOfSeats+"</td>"
+                        tableContent+="<td>"+table1516[i].admittedStudents+"</td>"
+                        tableContent+="<td>"+table1516[i].vacantSeats+"</td>"
+                        tableContent+="<td>"+table1516[i].feeStructure+"</td>"
+                        tableContent+="</tr>"
+                    }
+                    break;
+    
+            }
+            tableContent+="</tbody></table>"
+            //console.log(tableContent)
+            tableSpace.innerHTML = tableContent;
+            console.log(tableSpace.innerHTML)
+        }
+
+    </script>
+</head>
+<body>
+    <div class="whole">
+        <div class = "titleCover">
+            <div class="banner">
+                <img src="images/amritaLogo.JPG">
+                <div class="titleSpace">
+                    <div class="title">
+                        Higher Studies Portal
+                    </div>
+                </div>
+            </div>
+            <form class="navbarPosition">
+                <div class="navbar">
+                    <button class="navbarElement" style="border: none;background: rgb(162, 26, 60);" id="ABOUT US" formaction="AboutRedirect" formmethod="get">
+                        ABOUT US
+                    </button>
+                    <button class="navbarElement" style="border: none;background: rgb(162, 26, 60);" id="COURSES" formaction="CoursesOfferedRedirect" formmethod="get">
+                        COURSES
+                    </button>
+                    <button class="navbarElement" style="border: none;background: rgb(162, 26, 60);" id="STUDENTS" formaction="StudentDetailsRedirect" formmethod="get">
+                        STUDENTS
+                    </button>
+                    <button class="navbarElement" style="border: none;background: rgb(162, 26, 60);" id="FACULTY" formaction="FacultyRedirect" formmethod="get">
+                        FACULTY
+                    </button>
+                    <button class="navbarElement" style="border: none;background: rgb(162, 26, 60);" id="chat" formaction="FAQRedirect" formmethod="get">
+                        FAQ
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="coursesDetails">
+            <div class="csDetails">
+                <div>Courses & Seats Details</div>
+            </div>
+            <div class="admissionYearFilter">
+                <div class="admissionYearSpace">
+                <div class="labelSpace">
+                    <div class="label">
+                        Admission Year : 
+                    </div>
+                </div>
+                <div class="dropdownSpace">
+                    <div class="dropdown">
+                        <div class="custom-select" style="width:200px;">
+                            <select id="yearSelect">
+                              <option value="2018-2019" selected>2018-2019</option>
+                              <option value="2017-2018">2017-2018</option>
+                              <option value="2016-2017">2016-2017</option>
+                              <option value="2015-2016">2015-2016</option>
+                            </select>
+                          </div>
+                    </div>
+                </div>
+                </div>
+                <div class="searchSpace">
+                    <button onClick="Update()" >Search</button>
+                </div>
+            </div>
+
+            <div class="tableSpace" id="tableSpace">
+                <table>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Course Name</th>
+                        <th>No. of Seats</th>
+                        <th>Admitted Students</th>
+                        <th>Vacant Seats</th>
+                        <th>Fee Structure</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
